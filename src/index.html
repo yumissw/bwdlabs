@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Список задач</title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/media.css" />
+    <link rel="shortcut icon" href="/smth/ic.png" />
+  </head>
+
+  <header class="header">
+    <div class="container">
+      <div class="header-nav">
+        <a href="#!" class="logo"
+          >୨୧ ‧₊˚⋅
+          
+          <img src="/smth/l1.png" width="40px" alt="Логотип" />
+        </a>
+        <nav id="nav" class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="main.html" class="nav-link">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a href="projects.html" class="nav-link">Проекты</a>
+            </li>
+            <li class="nav-item"><a class="a1">Список задач</a></li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">О приложении</a>
+            </li>
+          </ul>
+          <button id="nav-btn" class="nav-button">
+            <img id="nav-btn-img" src="/smth/nav-open.svg" alt="Nav button" />
+          </button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <body class="b1">
+    <section class="s11">
+      <div class="container">
+        <h1 class="sh1">⋅ ˚ ₊ ‧ Список задач ‧ ₊ ˚ ⋅</h1>
+
+        <button class="open" id="open">Добавить задачу</button>
+
+        <dialog class="dialog">
+          <div class="modal__inner">
+            <button id="close">
+              <img class="cld" src="/smth/close1.svg" width="25" alt="cl1" />
+            </button>
+            <div class="modal__header">
+              <h1 class="h1d">⋅˚₊‧ Добавить задачу ‧₊˚⋅</h1>
+            </div>
+
+            <form id="taskform">
+              <input
+                id="inp"
+                type="text"
+                placeholder="Введите задачу"
+                required
+              />
+              <button id="add" type="submit">Добавить</button>
+            </form>
+          </div>
+        </dialog>
+
+        <table>
+          <thead class="thead1">
+            <tr>
+              <th class="th1">Задача</th>
+              <th class="th1">В работе</th>
+              <th class="th1">Выполнено</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr class="first">
+              <td>
+                <div class="container1">
+                  <label class="tt">
+                    <span class="checkbox">
+                      <input type="checkbox">
+                  </span>  
+
+                    1
+                  </label>
+                  <button class="delete-btn">Удалить</button>
+                </div>
+              </td>
+
+              <td>
+                <div class="container1">
+                  <label class="tt">
+                    <span class="checkbox">
+                      <input type="checkbox">
+                  </span>                   
+                    2
+                  </label>
+                  <button class="delete-btn">Удалить</button>
+                </div>
+              </td>
+
+              <td>
+                <div class="container1">
+                  <label class="tt">
+                    <span class="checkbox">
+                      <input type="checkbox">
+                  </span>    
+                    3
+                  </label>
+                  <button class="delete-btn">Удалить</button>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="second">
+              <td>
+                <div class="container1">
+                  <label class="tt">
+                    <span class="checkbox">
+                      <input type="checkbox">
+                  </span>
+                    4
+                  </label>
+                  <button class="delete-btn">Удалить</button>
+                </div>
+              </td>
+
+              <td>
+                <div class="container1">
+                  <label class="tt">
+                    <span class="checkbox">
+                      <input type="checkbox">
+                  </span>
+                    5
+                  </label>
+                  <button class="delete-btn">Удалить</button>
+                </div>
+              </td>
+
+              <td>
+                <div class="container1">
+                  <label class="tt">
+                    <span class="checkbox">
+                      <input type="checkbox">
+                  </span>
+                    6
+                  </label>
+                  <button class="delete-btn">Удалить</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+
+    <script src="bundle.js"></script> 
+  </body>
+</html>

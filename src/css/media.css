@@ -1,0 +1,82 @@
+@media (max-width: 799px) {
+  .nav-list {
+    display: none;
+  }
+
+  .nav-button {
+    display: block;
+    padding-bottom: 10px;
+  }
+
+  .b-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+
+  .b-img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  .nav.open .nav-list {
+    background-color: #dbc2c2; /* Цвет фона шапки */
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 1;
+    padding: 46px 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+
+    font-size: 34px;
+    font-weight: 600;
+  }
+
+  .nav-button {
+    position: fixed;
+    z-index: 9;
+    top: 46px;
+    right: 36px;
+  }
+
+  .header-nav {
+    margin-bottom: 0px;
+  }
+
+  .s11-row {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .s11-content {
+    margin-top: 0;
+    max-width: 100%;
+  }
+
+  .s11-img {
+    text-align: center;
+  }
+
+  body {
+    padding-top: 100px; /* Отступ равен высоте шапки */
+  }
+}
+
+@media (max-width: 768px) {
+  .c11 {
+    flex-direction: column; /* Изменяем направление на столбец */
+    align-items: flex-start; /* Выравнивание по началу */
+  }
+
+  .responsive-image {
+    margin-right: 0; /* Убираем отступ для мобильной версии */
+    margin-bottom: 10px; /* Добавляем отступ снизу для текста */
+  }
+}

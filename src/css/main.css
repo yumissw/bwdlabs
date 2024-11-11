@@ -1,0 +1,462 @@
+@import "./reset.css";
+
+.header {
+  padding-top: 30px;
+  padding: px;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background-color: #dbc2c2;
+  color: white;
+  z-index: 1000;
+}
+
+body {
+  color: black;
+}
+
+.b1 {
+  padding-top: 40px;
+}
+
+.b-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.b-img img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.s11-row {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+
+.s11-content {
+  max-width: 500px;
+  font-size: 20px;
+  color: #bba4a4;
+}
+
+.s11-content p {
+  line-height: 1.5;
+}
+
+.s11-img {
+  line-height: 2;
+  padding-top: 40px;
+}
+
+.h-h1 {
+  padding-top: 80px;
+  color: rgb(212, 132, 132);
+  width: 100%;
+  font-weight: 600;
+  font-size: 44px;
+  padding-bottom: 30px;
+}
+
+.c11 {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.text {
+  flex: 1;
+  color: black;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 32px;
+  color: white;
+  padding-bottom: 10px;
+}
+
+.nav-list {
+  display: flex;
+  column-gap: 50px;
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+  padding-bottom: 15px;
+}
+
+.nav-button {
+  display: none;
+}
+
+.nav-list a {
+  text-decoration: underline;
+  color: white;
+}
+
+.nav-list .a1 {
+  color: rgb(212, 132, 132);
+  text-decoration: none;
+}
+
+.nav-button {
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.tt {
+  text-align: center;
+}
+
+.bt1:hover {
+  background-color: #c0a8a8;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+td {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding-top: 25px;
+  height: 50px;
+  vertical-align: middle;
+}
+
+.th1 {
+  vertical-align: middle;
+  border: 1px solid #ddd;
+  text-align: center;
+  height: 50px;
+  background-color: #a2d4a381;
+}
+
+.thead1 {
+  vertical-align: middle;
+  height: 50px;
+}
+
+.first {
+  background-color: #d0f0c075;
+}
+
+.second {
+  background-color: #bfdab18a;
+}
+
+.delete-btn {
+  padding-top: 40px;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  background-color: #f1a59eb2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+  font-size: 20px;
+}
+
+.delete-btn:hover {
+  background-color: #df7878ab;
+}
+
+.checkbox1 {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.checkbox1:focus + .checkbox2 {
+  box-shadow: 0px 0px 0px 1px #7a3838, 0px 0px 10px #bd7e7e;
+  background-image: url(../smth/check.svg);
+}
+
+.chk {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: 2px solid #e0a9ae;
+  background-image: url('../smth/check.svg');
+  border-radius: 4px;
+  vertical-align: sub;
+  margin-right: 5px;
+
+  margin-top: 4px;
+}
+
+
+.checkbox-button {
+  width: 20px; /* Размер кнопки */
+  height: 20px;
+  opacity: 0;
+  position: absolute; /* Позиционируем кнопку поверх других элементов */
+  cursor: pointer; /* Изменяем курсор на указатель */
+}
+
+.checkbox-container {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #e0a9ae; /* Рамка */
+  border-radius: 4px;
+  vertical-align: sub;
+  margin-right: 5px;
+  margin-top: 4px;
+}
+
+#checkbox-image {
+  width: 18px; /* Размер изображения */
+  height: 18px;
+  position: absolute;
+ 
+  margin-top: 1px;
+
+  transition: 0.1s ease-in;
+  
+ 
+}
+
+.checkbox-frame {
+  background-color: #ffffff; /* Цвет фона рамки */
+  border-radius: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+
+
+
+
+
+.checkbox2 {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: 2px solid #e0a9ae;
+
+  border-radius: 4px;
+  vertical-align: sub;
+  margin-right: 5px;
+
+  margin-top: 4px;
+}
+
+.checkbox2::before {
+  content: "";
+
+  /* галочка */
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+ background-image: url("check.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+ /* transform: translate(-50%, -50%) scale(0);*/
+  margin-top: 1px;
+
+  transition: 0.1s ease-in;
+}
+
+.checkbox {
+  margin-right: 10px;
+  accent-color: rgb(184, 117, 117);
+}
+
+.checkbox input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: rgb(184, 117, 117);
+}
+
+
+.chbb{
+  content: "";
+
+  /* галочка */
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+ background-image: url("../smth/check.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: 1px;
+
+  transition: 0.1s ease-in;
+}
+
+
+
+
+.sh1 {
+  padding-top: 80px;
+  text-align: center;
+  color: rgb(212, 132, 132);
+  width: 100%;
+  font-weight: 600;
+  font-size: 44px;
+  padding-bottom: 0px;
+}
+
+.bt1 {
+  padding-top: 40px;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  background-color: #dbc2c2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+}
+
+.bta {
+  color: white;
+  font-size: 20px;
+}
+
+.dialog {
+  border: none;
+  padding: 0;
+
+  border-radius: 8px;
+  width: 450px;
+
+  max-width: 90%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal__inner {
+  border: 1.5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dialog::backdrop {
+  background: rgba(0, 0, 0, 0.212);
+}
+
+.h1d {
+  text-align: center;
+}
+
+.modal__header {
+  text-align: center;
+  font-size: 35px;
+  align-items: center;
+  padding: 5px;
+  color: rgb(212, 132, 132);
+}
+
+.close {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.cld {
+  float: right;
+}
+
+form {
+  padding: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 100%; /* 300px*/
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #684141;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #dbc2c2;
+}
+
+button[type="submit"]:hover {
+  color: white;
+  background-color: rgba(212, 132, 132, 0.637);
+}
+
+.container1 {
+  max-width: 1230px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.open {
+  margin-bottom: 10px;
+  float: right;
+  font-size: 20px;
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #dbc2c2;
+}
